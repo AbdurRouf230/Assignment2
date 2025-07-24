@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Flower-shop Website</title>
 </head>
-<body>
-    
+<body class="sm:ml-[150px] sm:mr-[150px]">
+
+    <!-- Nav bar section -->
+    <section>
+        <nav class="navbar-container">
+            <div class="image-container">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="anchor-container">
+                <ul class="nav-items">
+                    <li class="nav-item-a"><a href="#"><span class="nav-item-1 font-bold">Home</span></a></li>
+                    <li class="nav-item-b"><a href="#"><span class="nav-item-2 text-gray">Shop</span></a></li>
+                    <li class="nav-item-c"><a href="#"><span class="nav-item-2 text-gray">About us</span></a></li>
+                    <li class="nav-item-d">
+                        <a class="nav-anchor-logo" href="#">
+                            <img src="images/shopping-cart.png" alt="">
+                            <span class="font-normal">Cart($56)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!-- Banner Section -->
+    <section>
+        <div class="banner-container flex justify-between items-end sm:mt-[120px]">
+            <div class="banner-text sm:min-h-[299px] sm:w-[570px]">
+                <h3 class="banner-title noto-serif text-[65px] font-bold">
+                    ALWAYS <span class="text-orange">FRESH <br>FLOWERS</span>
+                </h3>
+                <p class="banner-description inter text-gray text-[22px]">
+                    Indulge your senses with the beauty and fragrance of
+                    our fresh flower shop. From classic roses to exotic 
+                    blooms, we offer a wide variety of fresh flowers that
+                    are perfect for any occasion.
+                </p>
+            </div>
+            <div class="banner-image sm:h-[355px] sm:w-[570px]">
+            <img src="images/hero-flower.png" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* Variables */
+:root{
+    --button-color: #E95A08;
+    --button-text-color: #FFFFFF;
+}
+
+/* shared styles */
+/* body{
+    margin-left: 150px;
+    margin-right: 150px;
+} */
+.noto-serif{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-orange{
+    color: #E95A08;
+}
+.text-gray{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.primary-button{
+    border:none;
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+}
+.hidden{
+    display: none;
+}
+
+/* Navbar styles */
+.navbar-container{
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.image-container img{
+    height: 71px;
+    width: 135px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.anchor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    
+}
+.nav-items a{
+    text-decoration: none;
+    color:black;
+}
+.nav-item-d img{
+    display: inline;
+    height: 24px;
+    width: 24px;
+}
+.nav-item-d .nav-anchor-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* banner */
+
+
+
+@media screen and (max-width:576px) {
+    body{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    /* Navbar display */
+    .nav-item-a , 
+    .nav-item-b , 
+    .nav-item-c{
+        display: none;
+    }
+    .navbar-container{
+        margin-top: 13px;
+    }
+    .image-container img{
+        height: 38px;
+        width: 63px;
+    }
+    /* Banner */
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+    .banner-image img{
+        height: 245px;
+        width: 393.18px;
+        margin-bottom:28px;
+    }
+    .banner-text{
+        height: 200px;
+    }
+    .banner-text .banner-title{
+        font-size: 24px;
+        height: 33px;
+        margin-bottom: 50px;
+    }
+    .banner-text .banner-description{
+        height: 68px;
+        font-size: 14px;
+    }
+
+
+}
