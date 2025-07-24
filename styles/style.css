@@ -6,13 +6,10 @@
 :root{
     --button-color: #E95A08;
     --button-text-color: #FFFFFF;
+    --button-hover-color: #a78b0c;
 }
 
 /* shared styles */
-/* body{
-    margin-left: 150px;
-    margin-right: 150px;
-} */
 .noto-serif{
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -42,6 +39,11 @@
     text-align: center;
     color: var(--button-text-color);
     background-color: var(--button-color);
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+.primary-button:hover {
+    background-color: var(--button-hover-color); /* Specify the hover color here */
 }
 .hidden{
     display: none;
@@ -97,10 +99,15 @@
 /* Card */
 .card-header{
     margin-top:120px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    text-align: center;
 }
 .card-title{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 16px;
@@ -112,15 +119,15 @@
 
 }
 .card-description-container .card-description{
-    text-align: center;
+    /* text-align: center; */
     font-size: 22px;
 
 }
 
 .card-container{
-    height: auto;
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
+    justify-content: center;
     column-gap: 20px;
     margin-top: 49px;
     margin-bottom: 210px;
@@ -145,6 +152,42 @@
 .card-box .primary-button .button-text{
     font-weight: 600;
 
+}
+/* Feature section */
+.feature-container{
+    display: flex;
+    justify-content: space-between;
+    height: 597px;
+    margin-bottom: 391.88px;
+
+}
+.feature-img-container .feature-badge {
+    height: 286px;
+    width: 286px;
+    position: relative;
+    margin-top: -730px;
+    margin-left: 350px;
+}
+
+
+.feature-img-container .feature-img{
+    height: 597px;
+    width: 540px;
+}
+
+.feature-text-container{
+    align-content: center;
+}
+.feature-title{
+    margin-bottom: 20px;
+}
+.feature-description-list{
+    list-style-type: disc;
+}
+.feature-description-list .feature-item{
+    height: 108px;
+    width: 540px;
+    margin-bottom: 20px;
 }
 
 
@@ -209,6 +252,8 @@
         row-gap: 29.5px;
         margin-top: 28px;
         margin-bottom: 41.5px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
     .card-box{
         height: 340.5px;
@@ -219,8 +264,55 @@
         height: 50px;
         width: 171px;
     }
+    /* Feature Section */
+    .feature-container{
+        flex-direction: column;
+        height: 870px;
+        width: 100%;
+
+    }
+    .feature-img-container{
+        height: 396px;
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+    .feature-img-container .feature-img{
+        margin-bottom: 18px;
 
 
+    }
+    .feature-img-container .feature-badge{
+        display: none;
+        
+    }
+    .feature-title-break{
+        display: none;
+    } 
+    .feature-text-container{
+        height: 234px;
+        width: 100%;
+    }
+    .feature-title{
+        height: 33px;
+        width: 270px;
+        margin-bottom: 20px;
+        font-size: 24px;
 
+    } 
+    .feature-description-list{
+        font-size: 14px;
+
+    }
+    .feature-description-list .feature-item{
+        height: 61px;
+        width: 361px;
+        margin-bottom: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        margin-left: 16px;
+        margin-right: 16px;
+
+    }
 
 }
